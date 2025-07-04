@@ -4,8 +4,8 @@ const bodyParser=require('body-parser')
 const countryRoutes=require('./routes/countries') 
 
 const app=express();
-app.use(cors);
-app.use(bodyParser.json);
+app.use(cors());
+app.use(bodyParser.json());
 app.use('/api/countries',countryRoutes)
 
 const PORT=process.env.PORT || 5000;
