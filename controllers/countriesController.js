@@ -3,6 +3,7 @@ const prisma=new PrismaClient()
 
 // creating a country
 exports.createCountry = async (req, res) => {
+  console.log("Incoming POST  /api/countries")
   const { name, description, imageUrl } = req.body;
   try {
     const country = await prisma.country.create({
