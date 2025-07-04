@@ -1,6 +1,6 @@
 const express=require('express');
 const router=express.Router();
-const countriesController=require('.../controllers/countriesController')
+const countriesController=require('../controllers/countriesController')
 
 // CREATE
 router.post('/',countriesController.createCountry)
